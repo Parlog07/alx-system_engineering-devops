@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# ls using for loop
+# print file names without the number prefix
 
-for f in *; do
-  echo "$f" | cut -d '-' -f 2;
+for file_name in *
+do
+	echo "$file_name" | cut -d "-" -f2-
 done
